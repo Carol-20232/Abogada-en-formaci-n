@@ -1,14 +1,14 @@
 body {
     text-align: center;
-    color: #3a3a3a;
-    background-color: #ffe6f0; /* rosa muy claro */
-    font-family: 'Times New Roman', sans-serif;
+    color: #3b3b3b;
+    background-color: #fff3f3; /* fondo rosado muy claro */
+    font-family: 'Segoe UI', 'Times New Roman', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .titulo {
-    color: #b94ebf; /* rosa morado elegante */
+    color: #a64c79; /* rosado palo oscuro */
 }
 
 nav ul {
@@ -16,7 +16,7 @@ nav ul {
     margin: auto;
     border-radius: 10px;
     list-style-type: none;
-    background-color: #f8b9d4; /* rosa pastel */
+    background-color: #f8c8dc; /* rosa suave */
     padding: 0;
 }
 nav li {
@@ -25,12 +25,12 @@ nav li {
 nav a {
     padding: 20px;
     width: 150px;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 nav ul a:hover {
-    background-color: #f59ac4; /* tono rosa más intenso */
+    background-color: #f497b0; /* rosa coral suave */
 }
 
 .contenido {
@@ -46,12 +46,12 @@ nav ul a:hover {
     font-size: 20px;
 }
 .contenido .objetivos div {
-    background-color: #fcd6e5; /* rosa claro */
+    background-color: #ffe0e6; /* rosado pastel cálido */
     width: 90%;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 .contenido .objetivos img {
     width: 200px;
@@ -63,16 +63,16 @@ nav ul a:hover {
 }
 .contenido .secundario p {
     line-height: 1.5;
-    color: #5a3d3d;
+    color: #4a2e2e;
     font-size: 20px;
-    background-color: #f5a9c0;
+    background-color: #f5a89e; /* durazno cálido */
     border-radius: 15px;
     padding: 20px;
     height: 700px;
 }
 
 .caja-informacion {
-    background-color: #fcd6e5;
+    background-color: #ffe8e8; /* rosa muy claro */
     padding: 20px;
     border-radius: 10px;
     color: #3a3a3a;
@@ -83,12 +83,12 @@ nav ul a:hover {
 
 .contenido .aptitudes h2 {
     line-height: 1.5;
-    color: #b94ebf;
+    color: #c25774; /* rosado profesional */
     margin-bottom: 10px;
 }
 
 .contenido .aptitudes p {
-    background-color: #fbb6ce;
+    background-color: #f6b6b6; /* coral suave */
     width: 90%;
     padding: 15px;
     border-radius: 10px;
@@ -109,7 +109,7 @@ nav ul a:hover {
 
 /* Pie de página */
 .piedepagina {
-    background-color: #f8b9d4;
+    background-color: #f8c8dc;
     margin-top: 100px;
 }
 .piedepagina p {
@@ -118,4 +118,3 @@ nav ul a:hover {
     font-size: 20px;
     padding: 60px 20px;
 }
-
