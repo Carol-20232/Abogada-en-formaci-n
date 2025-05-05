@@ -1,15 +1,14 @@
-body{
+body {
     text-align: center;
-    color: #000000;
-    background-color:#131e69;
-    font-family: Times New Roman, sans-serif;
+    color: #3a3a3a;
+    background-color: #ffe6f0; /* rosa muy claro */
+    font-family: 'Times New Roman', sans-serif;
     margin: 0;
     padding: 0;
-    }
-
+}
 
 .titulo {
-    color:rgb(235, 218, 240);
+    color: #b94ebf; /* rosa morado elegante */
 }
 
 nav ul {
@@ -17,7 +16,8 @@ nav ul {
     margin: auto;
     border-radius: 10px;
     list-style-type: none;
-    background-color: #0a476b;
+    background-color: #f8b9d4; /* rosa pastel */
+    padding: 0;
 }
 nav li {
     display: inline-flex;
@@ -25,74 +25,78 @@ nav li {
 nav a {
     padding: 20px;
     width: 150px;
-    color: white;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
 }
 nav ul a:hover {
-    background-color: #69b5e0;
+    background-color: #f59ac4; /* tono rosa más intenso */
 }
 
 .contenido {
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
 }
+
 .contenido .objetivos {
     width: 70%;
     margin: auto;
-    font-size:20px;
+    font-size: 20px;
 }
 .contenido .objetivos div {
-    background-color: #69b5e0;
+    background-color: #fcd6e5; /* rosa claro */
     width: 90%;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .contenido .objetivos img {
     width: 200px;
     border-radius: 15px;
 }
+
 .contenido .secundario {
     width: 30%;
 }
 .contenido .secundario p {
-    line-height:1.50;
-    color:white;
-    font-size:20px;
-    background-color: #0a476b;
+    line-height: 1.5;
+    color: #5a3d3d;
+    font-size: 20px;
+    background-color: #f5a9c0;
     border-radius: 15px;
     padding: 20px;
     height: 700px;
 }
+
 .caja-informacion {
-    background-color: #67b2d5; /* azul claro similar al que se ve en la imagen */
+    background-color: #fcd6e5;
     padding: 20px;
     border-radius: 10px;
-    color: black;
+    color: #3a3a3a;
     text-align: center;
     margin: 30px auto;
     width: 80%;
 }
 
-/* Estilo para la pestaña de Aptitudes*/
 .contenido .aptitudes h2 {
     line-height: 1.5;
-    color: white;
+    color: #b94ebf;
     margin-bottom: 10px;
 }
 
 .contenido .aptitudes p {
-    background-color: #2e85b7;
+    background-color: #fbb6ce;
     width: 90%;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
     font-size: 20px;
-    color: white;
+    color: #3a3a3a;
     line-height: 1.6;
 }
-
 
 /* Estilos de las imágenes */
 .contenido .Proyectos img {
@@ -100,17 +104,18 @@ nav ul a:hover {
     width: 250px;
     height: 310px;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Pie de página */
 .piedepagina {
-    background-color: #0a476b;
+    background-color: #f8b9d4;
     margin-top: 100px;
 }
 .piedepagina p {
-    color:white;
-    line-height:1.0;
-    font-size:20px;
-    padding: 100px;
+    color: #5a3d3d;
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 60px 20px;
 }
 
