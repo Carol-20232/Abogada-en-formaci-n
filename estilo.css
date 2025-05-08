@@ -1,127 +1,133 @@
 body {
     text-align: center;
     color: #3b3b3b;
-    background-color: #fff3f3; /* fondo rosado muy claro */
+    background-color: #fff3f3;
     font-family: 'Segoe UI', 'Times New Roman', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.titulo {
-    color: #a64c79; /* rosado palo oscuro */
+/* Título principal */
+.titulo h1 {
+    color: #a64c79;
+    font-size: 40px;
+    margin: 30px 0 10px;
 }
 
+/* Barra de navegación */
 nav ul {
-    width: 100%;
-    margin: auto;
-    border-radius: 10px;
-    list-style-type: none;
-    background-color: #f8c8dc; /* rosa suave */
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    list-style: none;
+    background-color: #f8c8dc;
+    border-radius: 0 0 15px 15px;
+    margin: 0;
 }
 nav li {
-    display: inline-flex;
+    display: inline;
 }
 nav a {
-    padding: 20px;
-    width: 150px;
+    display: block;
+    padding: 15px 25px;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
-nav ul a:hover {
-    background-color: #f497b0; /* rosa coral suave */
+nav a:hover {
+    background-color: #f497b0;
 }
 
+/* Contenido principal */
 .contenido {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    margin: 50px auto;
+    gap: 30px;
+    width: 90%;
+    margin: 40px auto;
+    justify-content: center;
 }
 
+/* Sección de objetivos */
 .contenido .objetivos {
-    width: 70%;
-    margin: auto;
-    font-size: 20px;
+    width: 65%;
+    font-size: 18px;
 }
 .contenido .objetivos div {
-    background-color: #ffe0e6; /* rosado pastel cálido */
-    width: 90%;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background-color: #ffe0e6;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
 }
 .contenido .objetivos img {
-    width: 200px;
+    width: 100%;
+    max-width: 250px;
     border-radius: 15px;
+    margin-top: 15px;
 }
 
+/* Sección lateral secundaria */
 .contenido .secundario {
     width: 30%;
 }
 .contenido .secundario p {
-    line-height: 1.5;
+    background-color: #f5a89e;
     color: #4a2e2e;
-    font-size: 20px;
-    background-color: #f5a89e; /* durazno cálido */
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 25px;
     border-radius: 15px;
-    padding: 20px;
-    height: 700px;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.caja-informacion {
-    background-color: #ffe8e8; /* rosa muy claro */
-    padding: 20px;
-    border-radius: 10px;
-    color: #3a3a3a;
-    text-align: center;
-    margin: 30px auto;
-    width: 80%;
-}
-
+/* Sección de aptitudes */
 .contenido .aptitudes h2 {
-    line-height: 1.5;
-    color: #c25774; /* rosado profesional */
+    color: #c25774;
     margin-bottom: 10px;
 }
-
 .contenido .aptitudes p {
-    background-color: #f6b6b6; /* coral suave */
-    width: 90%;
+    background-color: #f6b6b6;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
-    font-size: 20px;
-    color: #3a3a3a;
+    font-size: 18px;
     line-height: 1.6;
 }
 
+/* Tarjeta de información general */
+.caja-informacion {
+    background-color: #ffe8e8;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 85%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Secciones nuevas */
 .sobre-mi,
 .servicios,
 .valores,
 .comentarios {
-    background-color: #ffe0e6; /* mismo rosa pastel de otras secciones */
-    padding: 20px;
+    background-color: #ffe0e6;
+    padding: 25px;
     border-radius: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    font-size: 20px;
-    color: #3a3a3a;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    font-size: 18px;
+    line-height: 1.6;
 }
-/* Estilos de las imágenes */
-.contenido .Proyectos img {
-    margin: 10px;
-    width: 250px;
-    height: 310px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-/* Formulario de comentarios */
+
+/* Comentarios */
 .comentarios form {
     display: flex;
     flex-direction: column;
@@ -130,12 +136,26 @@ nav ul a:hover {
 .comentarios input[type="text"],
 .comentarios textarea {
     width: 80%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
 }
-/* Estilo para listas en objetivos y servicios */
+.comentarios input[type="submit"] {
+    background-color: #f497b0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.comentarios input[type="submit"]:hover {
+    background-color: #c25774;
+}
+
+/* Listas */
 .objetivos ul,
 .servicios ul,
 .valores ul {
@@ -143,25 +163,29 @@ nav ul a:hover {
     list-style-type: disc;
     margin-left: 40px;
     padding-left: 20px;
-    line-height: 1.6;
+}
+
+/* Imágenes generales */
+.contenido .Proyectos img,
+.foto-central {
+    margin: 15px auto;
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    display: block;
 }
 
 /* Pie de página */
 .piedepagina {
     background-color: #f8c8dc;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .piedepagina p {
     color: #5a3d3d;
     line-height: 1.5;
-    font-size: 20px;
-    padding: 60px 20px;
+    font-size: 18px;
+    padding: 40px 20px;
 }
-.foto-central {
-    display: block;
-    margin: 20px auto;
-    width: 250px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
+
+
