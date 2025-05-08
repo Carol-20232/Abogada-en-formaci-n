@@ -101,8 +101,7 @@ nav ul a:hover {
 .sobre-mi,
 .servicios,
 .valores,
-.comentarios,
-.tarjetas {
+.comentarios {
     background-color: #ffe0e6; /* mismo rosa pastel de otras secciones */
     padding: 20px;
     border-radius: 15px;
